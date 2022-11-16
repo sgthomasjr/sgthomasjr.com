@@ -14,22 +14,83 @@
             <a id="heading" href="index.html">SGThomasJr<span>.com</span></a>
         </h1>
     </header>
+
     <ul id="navbar">
-        <li id="navlist"><a href="index.html">Home</a></li>
-        <li id="navlist"><a href="html.html">HTML</a></li>
-        <li id="navlist"><a class="active" href="css.html">CSS</a></li>
-        <li id="navlist"><a href="java.html">JavaScript</a></li>
-        <li id="navlist"><a href="node.html">NodeJS</a></li>
-        <li id="navlist"><a href="sql.html">SQL</a></li>
-        <!--<li style="float:right" id="navlist"><a href="wp/">Blog</a></li>-->
+        <li class="nav" id="navlist"><a href="index.html">QA</a></li>
+        <li class="nav" id="navlist"><a href="java.html">JavaScript</a></li>
+        <li class="nav" id="navlist"><a href="node.html">NodeJS</a></li>
+        <li class="nav" id="navlist"><a href="sql.html">SQL</a></li>
+        <li class="nav" id="navlist"><a href="git.html">Git</a></li>
     </ul>
+
     <div class="container">
         <h2>Welcome to Cascading Style Sheets</h2>
-        <p>CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. It is a simple mechanism for adding
-            style (e.g., fonts, colors, spacing) to Web documents.s</p>
-        <a class="URL" href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/default.asp</a>
+        <ul class="breadcrumb">
+            <li><a class="crumb" href="index.html">Home</a></li>
+            <li><a class="crumb" href="html.html">HTML</a></li>
+            <li><b>CSS</b></li>
+        </ul>
+        <p><b>CSS</b> is a language used for describing the presentation of a document written in a markup language such as <b>HTML</b>. It is the cornerstone technology of the World Wide Web, alongside <b>JavaScript</b> it describes how <b>HTML</b> elements
+            should be displayed. Designed to enable the separation of presentation and content, including layout, colors, and fonts.</p>
+
+        <p>This separation can improve content accessibility and provide more flexibility with control in the specification of presentation characteristics and enables multiple web pges to share formatting by specifying the relevant CSS in a separate file,
+            this helps reduces complexity and repetition.</p>
+
+        <p>For the latest documention on <b>CSS</b>, please see the official home page at <a class="URL" href="https://www.w3.org/Style/CSS/Overview.en.html">w3.org</a>. Already familar with <b>CSS</b> and want to move forward with your learning, please
+            continue to the next level of front end programing with <a class="URL" href="java.html">JavaScript</a> or for back end access look into <a class="URL" href="node.html">NodeJS</a>.</p>
+        <ul class="sub-menu">
+            <li><a class="sub-menu" href="java.html">JavaScript</a></li>
+            <li><a class="sub-menu" href="node.html">NodeJS</a></li>
+        </ul>
+
+        <div class="small_indent">
+            <h2>The id Attribute</h2>
+            <p>To define a specific style for one special element, add an id attribute to the element.</p>
+            <div class="indent">
+                &lt;p id="p01"&gt;I am different&lt;/p&gt;
+            </div>
+            <p>Then define a style for the element with the specific id:</p>
+            <div class="indent">
+                #p01 {<br> &nbsp;&nbsp;&nbsp;color: blue;<br> }
+            </div>
+            <h3>The class Attribute</h3>
+            <p>To define a style for special types of elements, add a class attribute to the element:</p>
+            <div class="indent">
+                &lt;p class="error"&gt; I am different&lt;/p&gt;
+            </div>
+            <p>Then define a style for the elements with the specific class:</p>
+            <div class="indent">
+                p.error {<br> &nbsp;&nbsp;&nbsp;color: red;<br> }
+            </div>
+
+            <p>Fonts</p>
+            <ul>
+                <li><b>color</b> property defines the text color to be used</li>
+                <li><b>font-family</b> property defines the font to be used</li>
+                <li><b>font-size</b> property defines the text size to be used</li>
+            </ul>
+            <P>More styles</P>
+            <ul>
+                <li><b>border</b> property defines the border around an HTML element</li>
+                <li><b>padding</b> property defines a padding (space) between the text and the border</li>
+                <li><b>margin</b> property defines a margin (space) outside the border</li>
+            </ul>
+
+        </div>
+
     </div>
 
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <p><a class="URL_footer" href="mailto:scott@sgthomasjr.com">scott@sgthomasjr.com</a></p>
+            <p><a class="URL_footer" href="https://portal.hostgator.com/login">HostGator</a></p>
+        </div>
+        <div class="footer-right">
+            <p><a class="URL_footer" href="www.linkedin.com/in/sgthomas32" target="_blank">LinkedIn</a></p>
+            <p><a class="URL_footer" href="https://github.com/sgthomasjr" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
 
 </body>
 

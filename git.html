@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="headtop">
+            <a id="heading" href="index.html">SGThomasJr<span>.com</span></a>
+        </h1>
+    </header>
+
+    <ul id="navbar">
+        <li class="nav" id="navlist"><a href="qa.html">QA</a></li>
+        <li class="nav" id="navlist"><a href="java.html">JavaScript</a></li>
+        <li class="nav" id="navlist"><a href="node.html">NodeJS</a></li>
+        <li class="nav" id="navlist"><a href="sql.html">SQL</a></li>
+        <li class="nav" id="navlist"><a class="active" href="git.html">Git</a></li>
+    </ul>
+
+    <div class="container">
+
+        <h2>Version Control and QA</h2>
+
+        <ul class="breadcrumb">
+            <li><a class="crumb" href="index.html">Home</a></li>
+            <li><b>Git</b></li>
+        </ul>
+
+        <p>QA plays a major part in version control. Using a version control system, such as Git, is a requirement for any QA entering the field of automation. It is equally important that QA verifies the correct changes have been applied to the various development or testing envrionments. It is generally the responsibilty of QA to promote changes to the test and even stage or user acceptance environments. Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+        <p><a class="URL" href="https://git-scm.com/about" target="blank">Git</a></p>
+
+        <ul class="sub-menu">
+            <li><a class="sub-menu" href="frame.html">GitHub</a></li>
+            <li><a class="sub-menu" href="frame.html">GitLab</a></li>
+        </ul>
+
+        <h3>Version Control</h3>
+        <p>Version control is a system that records changes to a file or set of files over time, so that you can recall specific versions later. It allows you to revert selected files back to a previous state or even revert the entire project. This allows you to compare changes over time, see who last modified something that might be causing a problem. Using a version control system also generally means that if you screw things up or lose files, you can easily recover.</p>
+        <p>Major thing to remember about Git, it thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as delta-based version control).</p>
+        <p>Git does not think of or store its data this way. Instead, Git thinks of its data more like a series of snapshots of a miniature filesystem. Every time you commit, or save the state of your project, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git does not store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.</p>
+        <p>Most operations in Git need only local files and resources to operate, generally no information is needed from another computer on your network. If you’re used to a CVCS where most operations have that network latency overhead, this aspect of Git will make you think that the gods of speed have blessed Git with unworldly powers. Because you have the entire history of the project right there on your local disk, most operations seem almost instantaneous.</p>
+        <p>This also means that there is very little you can’t do if you’re offline or off VPN. If you get on an airplane or a train and want to do a little work, you can commit happily (to your local copy, remember?) until you get to a network connection to upload. If you go home and can’t get your VPN client working properly, you can still work. In many other systems, doing so is either impossible or painful. In Perforce, for example, you can’t do much when you aren’t connected to the server; in Subversion and CVS, you can edit files, but you can’t commit changes to your database (because your database is offline). This may not seem like a huge deal, but you may be surprised what a big difference it can make.</p>
+        
+        <div class="indent">
+            <h3>The Three States</h3>
+        <p>Git has <b>three main states</b> that your files can reside in: <b>modified</b>, <b>staged</b>, and <b>committed</b>.</p>
+        <ul>
+            <li><b>Modified</b> means that you have changed the file but have not committed it to your database yet</li>
+            <li><b>Staged</b> means that you have marked a modified file in its current version to go into your next commit snapshot</li>
+            <li><b>Committed</b> means that the data is safely stored in your local database</li>
+        </ul>
+            </div>
+            <p>This leads us to the three main sections of a Git project: the working tree, the staging area, and the Git directory. The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.</p>
+
+            <p>The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well.</p>
+            
+            <p>The Git directory is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.</p>
+            
+            <div class="indent">
+            <p>The basic Git workflow goes something like this:<p></p>
+            <ol>
+                <li>You modify files in your working tree</li>
+                <li>You selectively stage just those changes you want to be part of your next commit, which adds only those changes to the staging area</li>
+                <li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory</li>
+            </ol>
+        </div>
+        
+        <p>If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified.</p>
+        <h3>Command Line</h3>    
+        <p><blockquote>Scott Chacon and Ben Straub. <cite>"Pro Git." 2nd Edition,</cite> <a class="URL" href="https://git-scm.com/book/en/v2" target="blank">Read online for free</a>.</blockquote></p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p><a class="URL_footer" href="mailto:scott@sgthomasjr.com">scott@sgthomasjr.com</a></p>
+            <p><a class="URL_footer" href="https://portal.hostgator.com/login" target="_blank">cPanel</a></p>
+        </div>
+        <div class="footer-right">
+            <p><a class="URL_footer" href="www.linkedin.com/in/sgthomas32" target="_blank">LinkedIn</a></p>
+            <p><a class="URL_footer" href="https://github.com/sgthomasjr" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

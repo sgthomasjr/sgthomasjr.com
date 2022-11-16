@@ -14,16 +14,107 @@
             <a id="heading" href="index.html">SGThomasJr<span>.com</span></a>
         </h1>
     </header>
+
     <ul id="navbar">
-        <li id="navlist"><a href="index.html">Home</a></li>
-        <li id="navlist"><a href="html.html">HTML</a></li>
-        <li id="navlist"><a href="css.html">CSS</a></li>
-        <li id="navlist"><a href="java.html">JavaScript</a></li>
-        <li id="navlist"><a href="node.html">NodeJS</a></li>
-        <li id="navlist"><a class="active" href="sql.html">SQL</a></li>
-        <!--<li style="float:right" id="navlist"><a href="wp/">Blog</a></li>-->
+        <li class="nav" id="navlist"><a href="qa.html">QA</a></li>
+        <li class="nav" id="navlist"><a href="java.html">JavaScript</a></li>
+        <li class="nav" id="navlist"><a href="node.html">NodeJS</a></li>
+        <li class="nav" id="navlist"><a class="active" href="sql.html">SQL</a></li>
+        <li class="nav" id="navlist"><a href="git.html">Git</a></li>
     </ul>
 
+    <div class="container">
+
+        <h2>Fun with Databases</h2>
+
+        <ul class="breadcrumb">
+            <li><a class="crumb" href="index.html">Home</a></li>
+            <li><b>SQL</b></li>
+        </ul>
+
+
+        <p><b>Structured Query Language</b> or <b>SQL</b> is a relational database with the basis being <b>RDBMS</b> or <b>Relational Database Management System</b>, which all modern database system follow, such as Oracle, Sybase, or MS SQL. In simple terms,
+            RDMS is a database where related data is stored in the form of tables with rows and columns.</p>
+
+        <ul class="sub-menu">
+            <li><a class="sub-menu" href="mssql.html">MS SQL</a></li>
+            <li><a class="sub-menu" href="sybase.html">Sybase</a></li>
+            <li><a class="sub-menu" href="mysql.html">MySQL</a></li>
+        </ul>
+
+        <div class="small_indent">
+            <p>From my past experiences, I believe a tester should have the following database and SQL skills:
+                <ul>
+                    <li>The ability to recognize the different types of databases</li>
+                    <li>The ability to connect to the database using different SQL connection clients</li>
+                    <li>Understanding of the relationship between database tables, keys, and indices</li>
+                    <li>Ability to write a simple select or SQL statement along with more complex join queries</li>
+                    <li>The ability to interpret more complex queries</li>
+                </ul>
+
+                <p>QA Engineers should be skilled when it comes to finding bugs and errors in applications during testing activities. You’ll find their knowledge of these skills, as well as the application of these skills, has played a big part in their
+                    efficiency in solving these problems.</p>
+                <p>“… I was recently involved in front-end testing of eleven different websites. These websites hosted documents so that users might be able to print while using their personal printers. That being said, we require that our users install
+                    a special print controller on a PC before they print these documents. My job was to print documents from various combinations of operating systems, browsers, and printers. I would also verify the print quality of the documents. For
+                    this test, we did not need to apply any SQL skills. However, we did need SQL experience to verify the test data. This allows the ability to then insert, update, and delete the test data values in the database. So, I used SQL queries
+                    against the SQL server database for this particular project…” </p>
+                <p>“…During a different project, I was a part of back-end testing, where complex SQL Query knowledge was a must-have. We use an internal user interface tool that gathers data from the Oracle database, which is based on the input values. And
+                    as a part of our testing, we compared the UI tool output and the database output. To do this, we inserted the same values to the tool and the database to make sure that the tool was functioning properly. The Database Administrator,
+                    then gave the testing team the specific queries with select statements to use every time input values varied. Even still, we needed to understand the relation between the tables, columns, and the query before we used it. We also used
+                    different types of SQL statements to verify the test data..."</p>
+                <p>More terms:</p>
+                <ul>
+                    <li>
+                        Inner Join: Retrieves the matched records from both tables
+                    </li>
+                    <li>Distinct: Retrieves the different values from one or more fields</li>
+                    <li>In: This operator will find the value that is within the list and the value that isn’t</li>
+                    <li>Between: This operator is used to retrieve the values within a range</li>
+                    <li>Like: This operator will perform pattern matching using wildcards; it is used in the where clause</li>
+                    <li>Order By Clause: Sorts the table records in ascending or descending order. The default order is ascending</li>
+                    <li>Group By: Use Group By statements with the aggregate function to group the result set with one or more columns</li>
+                    <li>Aggregate Functions: Performs a calculation on a set of values and return a single value. Example: Avg, Min, Max, Sum, count, etc</li>
+                </ul>
+
+
+
+
+                <h3>Keys</h3>
+                <p>Single or combination of multiple fields in a table. Used to fetch or retrieve records/data-rows from the data table according to the condition/requirement. Keys are also used to create a relationship among different database tables or
+                    views.
+                </p>
+
+                <h3>Views</h3>
+                <p>VIEWS are virtual tables that do not store any data of their own but display data stored in other tables. In other words, VIEWS are nothing but SQL Queries. A view can contain all or a few rows from a table. A SQL view can show data from
+                    one table or many tables. Views improve the security of the database by showing only the intended data to authorized users. They hide sensitive data and Restrict access to the data in such a way that a user can see and (sometimes)
+                    modify exactly what they need and no more.
+                </p>
+
+                <h3>Joins</h3>
+                <p>The SQL Joins is used to combine records from two or more tables in a database. A JOIN is a means for combining fields from two tables by using values common to each. It helps to retrieve data from two or more database tables. The tables
+                    are mutually related using primary and foreign keys. There are various types of Joins such as Cross Joins, Inner Joins, Outer Joins, Left/Right Joins, etc.
+                </p>
+
+                <h3>Subqueries</h3>
+                <p>A Subquery or Inner query or a Nested query is a query within another SQL query and embedded within the WHERE clause. It is used to return data that will be used in the main query as a condition to further restrict the data to be retrieved.
+                    Subqueries can be used with the SELECT, INSERT, UPDATE, and DELETE statements along with the operators.</p>
+
+                <h3>Cloning Tables</h3>
+                <p>There may be a situation when you just want to create an exact copy or clone of an existing table to test or perform something without affecting the original table.
+                </p>
+
+                <h3>Sequences</h3>
+                <p>The sequence is a set of integers 1, 2, 3, … etc that is generated and supported by some database systems to produce unique values on demand. A sequence is a user-defined schema bound object that generates a sequence of numeric values.
+                    They are frequently used in many databases because many applications require each row in a table to contain a unique value and sequences provide an easy way to generate them.
+                </p>
+
+                <h3>Temporary Tables</h3>
+                <p>There are RDBMS, which supports temporary tables. Temporary Tables are a great feature that lets you store and process intermediate results by using the same selection, update, and join capabilities that you can use with typical SQL Server
+                    tables. The most important thing that should be known for temporary tables is that they will be deleted when the current client session terminates.
+                </p>
+        </div>
+
+    </div>
 </body>
 
 </html>
